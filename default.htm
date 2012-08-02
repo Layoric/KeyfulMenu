@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Keyful Menu Example</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+    <script src="Scripts/accessiblMenu.jquery.js" type="text/javascript"></script>
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Menu 1</a>
+                <div>
+                    <ul>
+                        <li><a href="#">Sub Menu 1</a></li>
+                        <li><a href="#">Sub Menu 2</a></li>
+                        <li><a href="#">Sub Menu 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Menu 2</a>
+                <div>
+                    <ul>
+                        <li><a href="#">Sub Menu 1</a></li>
+                        <li><a href="#">Sub Menu 2</a></li>
+                        <li><a href="#">Sub Menu 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Menu 3</a>
+                <div>
+                    <ul>
+                        <li><a href="#">Sub Menu 1</a></li>
+                        <li><a href="#">Sub Menu 2</a></li>
+                        <li><a href="#">Sub Menu 3</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+
+        var options = {
+            root_alignment: 'horizontal',
+            sub_alignment: 'vertical'
+        }
+        $(document).ready(function () {
+            $("#menu").accessibleMenu(options);
+        });
+
+    </script>
+</body>
+</html>
