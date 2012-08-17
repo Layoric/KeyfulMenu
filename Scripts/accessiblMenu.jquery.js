@@ -9,7 +9,7 @@
                 sub_alignment: 'horizontal'
             }
 
-            var options = $.extend(defaults, options);
+            var options = $.extend(defaults, options); 
 
             function menuObject(rootElement) {
                 //First lot of menu items
